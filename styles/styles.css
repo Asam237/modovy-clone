@@ -3,3 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 1024px;
+}
+
+.site__header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+.site__header-nav ul {
+  padding-top: 0.5rem;
+}
+.site__header-nav ul li {
+  padding: 4px 0 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .site__header {
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site__header-nav ul {
+    padding-top: 0;
+    display: flex;
+  }
+  .site__header-nav ul li {
+    padding: 0 16px 0 0;
+  }
+}
